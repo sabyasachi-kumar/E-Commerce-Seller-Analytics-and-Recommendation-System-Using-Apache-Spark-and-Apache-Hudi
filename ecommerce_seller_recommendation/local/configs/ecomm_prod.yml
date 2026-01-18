@@ -1,0 +1,17 @@
+seller_catalog:
+  input_path: "/home/sabya/2025EM1100189/ecommerce_seller_recommendation/local/raw/seller_catalog/seller_catalog_dirty.csv"
+  hudi_output_path: "/home/sabya/2025EM1100189/ecommerce_seller_recommendation/local/processed/seller_catalog_hudi/"
+
+company_sales:
+  input_path: "/home/sabya/2025EM1100189/ecommerce_seller_recommendation/local/raw/company_sales/company_sales_dirty.csv"
+  hudi_output_path: "/home/sabya/2025EM1100189/ecommerce_seller_recommendation/local/processed/company_sales_hudi/"
+
+competitor_sales:
+  input_path: "/home/sabya/2025EM1100189/ecommerce_seller_recommendation/local/raw/competitor_sales/competitor_sales_dirty.csv"
+  hudi_output_path: "/home/sabya/2025EM1100189/ecommerce_seller_recommendation/local/processed/competitor_sales_hudi/"
+
+recommendation:
+  seller_catalog_hudi: "/home/sabya/2025EM1100189/ecommerce_seller_recommendation/local/processed/seller_catalog_hudi/"
+  company_sales_hudi: "/home/sabya/2025EM1100189/ecommerce_seller_recommendation/local/processed/company_sales_hudi/"
+  competitor_sales_hudi: "/home/sabya/2025EM1100189/ecommerce_seller_recommendation/local/processed/competitor_sales_hudi/"
+  output_csv: "/home/sabya/2025EM1100189/ecommerce_seller_recommendation/local/processed/recommendations_csv/seller_recommend_data.csv"
